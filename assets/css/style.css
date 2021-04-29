@@ -5,24 +5,21 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Sawarabi Gothic', sans-serif;
+    background-color: #857c8b83;
 }
-header, main {
+header, main, footer {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .container {
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid #CCC;
     width: 990px;
 }
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-bottom: 1px solid #CCC;
-}
-.header h1 {
+.container h1,
+.container h2 {
     margin-bottom: 0px;
 }
 figure {
@@ -32,7 +29,39 @@ figure {
     padding: 5px;
     background-color: #CCC;
     border-radius: 10px;
+    margin-bottom: 5px;
 }
 figure img {
     border-radius: 10px;
+}
+.column {
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+article {
+    border-bottom: 1px solid #CCC;
+}
+q,
+cite {
+    color: #040994;
+}
+footer {
+    height: 70px;
+    text-align: center;
+    color: #FFF;
+    background-color:  rgba(34, 33, 33, 0.507);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cabecalho {
+    width: 990px;
+    height: 60px;
+    background-color:  rgba(34, 33, 33, 0.507);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: #FFF;
 }
