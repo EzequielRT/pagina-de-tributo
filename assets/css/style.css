@@ -44,6 +44,9 @@ q,
 cite {
     color: #040994;
 }
+.line_height {
+    line-height: 60px;
+}
 footer {
     height: 70px;
     text-align: center;
@@ -65,6 +68,15 @@ footer {
 }
 .ultimo_paragrafo {
     margin-bottom: 30px;
+}
+.text_align {
+    align-items: left;
+}
+
+@media (max-width: 896px) {
+    .line_height {
+        line-height: 35px;
+    }
 }
 
 @media (min-width: 510px) and (max-width: 1011px) {
